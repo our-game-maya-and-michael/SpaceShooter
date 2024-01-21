@@ -1,30 +1,10 @@
-# Unity week 2: Formal elements
-
-A project with step-by-step scenes illustrating some of the formal elements of game development in Unity, including: 
-
-* Prefabs for instantiating new objects;
-* Colliders for triggering outcomes of actions;
-* Coroutines for setting time-based rules.
-
-Text explanations are available 
-[here](https://github.com/gamedev-at-ariel/gamedev-5782) in folder 04.
-
-## Cloning
-To clone the project, you may need to install git lfs first (if it is not already installed):
-
-    git lfs install 
-
-To clone faster, you can limit the depth to 1 like this:
-
-    git clone --depth=1 https://github.com/<repository-name>.git
-
-When you first open this project, you may not see the text in the score field.
-This is because `TextMeshPro` is not in the project.
-The Unity Editor should hopefully prompt you to import TextMeshPro;
-once you do this, re-open the scenes, and you should be able to see the texts.
-
-
-
+# Unity week 3
+In this repository I changed the game of Erel and Maoz to my liking, the things I changed are:
+* The game boundaries: to make it look like a circle game, when the player moves off screen to the right or left he teleport to the opposite side like in a circle universe [The script](https://github.com/our-game-maya-and-michael/SpaceShooter/blob/main/Assets/Scripts/1-movers/ObjectWarpAsCircle.cs)
+* Adding 3 hit points: to make the game a little longer and fun I gave the player 3 lives, when he gets hit for the third life he gets destroyed and the game is over ! [The script](https://github.com/our-game-maya-and-michael/SpaceShooter/blob/main/Assets/Scripts/3-collisions/DestroyOnTrigger2D.cs)
+* Cooldown time to the laser: to make the game a little more intersting and deficult I made a cooldown timer for the laser so that you cant just shoot forever the defualt is 0.5 seconds between each shot [The script](https://github.com/our-game-maya-and-michael/SpaceShooter/blob/main/Assets/Scripts/2-spawners/LaserShooter.cs)
+* Adding a Ultimate: to add extra spice to the game I made a Ultiame that spawns every 15 seconds and kill the whole map and gives the player all the points for it ! [The script](https://github.com/our-game-maya-and-michael/SpaceShooter/blob/main/Assets/Scripts/3-collisions/UltimateEffect.cs)
+[to play the game on itch.io](https://mayamichael.itch.io/spaceshooter-michael)
 ## Credits
 
 Programming:
